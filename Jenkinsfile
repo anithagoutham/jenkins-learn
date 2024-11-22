@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-               sh 'echo this is '
+               sh 'echo this is deploy'
             }
         }
     }
