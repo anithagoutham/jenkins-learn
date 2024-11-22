@@ -45,7 +45,7 @@ pipeline {
                 echo "Password: ${params.PASSWORD}"  
             }
         }
-    }
+    
 
     stage('Approval'){
             input {
@@ -60,6 +60,7 @@ pipeline {
                 echo "Hello, ${PERSON}, nice to meet you."
             }
         }
+    }   
 
  post {
         always{
