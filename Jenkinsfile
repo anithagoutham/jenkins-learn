@@ -1,5 +1,7 @@
 pipeline {
-    agent any 
+    agent {
+        label 'agent-1'
+    } 
     stages {
         stage('Build') { 
             steps {
@@ -20,3 +22,17 @@ pipeline {
         }
     }
 }
+
+//  post {
+//         always{
+//             echo "This sections runs always"
+//             deleteDir()
+//         }
+//         success{
+//             echo "This section run when pipeline success"
+//         }
+//         failure{
+//             echo "This section run when pipeline failure"
+//         }
+//     }
+// }
